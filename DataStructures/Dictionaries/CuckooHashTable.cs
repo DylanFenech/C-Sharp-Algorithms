@@ -203,7 +203,7 @@ namespace DataStructures.Dictionaries
                     // The hash functions numbers are indexed from 1 not zero
                     for (int i = 1; i <= NUMBER_OF_HASH_FUNCTIONS; i++)
                     {
-                        position = _cuckooHash(key, i);
+                        position = _cuckooHash(newEntry.Key, i);
 
                         if (!_isActive(position))
                         {
